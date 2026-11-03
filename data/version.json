@@ -1,0 +1,11 @@
+{
+  "version": "1.6.0",
+  "date": "2026-09-18",
+  "name": "ModLingo-Hub",
+  "details": [
+    "Correctif cache persistant Flatpak et EXE",
+    "Sauvegarde complète du cache à la fermeture",
+    "Interface et simulation améliorées",
+    "Support LM Studio et sélection explicite du modèle"
+  ]
+}

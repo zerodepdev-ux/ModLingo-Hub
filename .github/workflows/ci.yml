@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+    branches: ['**']
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      # Paquets verrouillés, sans scripts d'installation.
+      - run: npm ci --ignore-scripts
+
+      - name: Serveur MCP
+        run: node tools/livemod/test.js
+
+      - name: Interface de traduction
+        run: node tools/livemod/test-interface.js
+
+      - name: Dossier portable (build hors ligne)
+        run: node tools/livemod/test-build.js

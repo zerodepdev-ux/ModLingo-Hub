@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Faille de sécurité
+    url: https://github.com/zerodepdev-ux/ModLingo-Hub/security/advisories/new
+    about: Signale-la en privé, pas dans une issue publique.

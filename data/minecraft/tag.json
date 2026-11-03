@@ -1,0 +1,23 @@
+{
+    "_doc": "Tags et codes de formatage Minecraft dans les fichiers KubeJS/FTBQuest — NE PAS TRADUIRE",
+    "tags": [
+        {
+            "name": "minecraft_color_codes",
+            "regex": "&[0-9a-fk-orA-FK-OR]",
+            "description": "Codes couleur/format Minecraft : &7 (gris), &c (rouge), &l (gras), &r (reset), &k (obfusqué), etc.",
+            "example": "&7Texte gris &c&lTexte rouge gras"
+        },
+        {
+            "name": "animated_text_tags",
+            "regex": "<(?:shake|wave|rainb|swing|neon|glitch|grad|pend)[^>]*>",
+            "description": "Tags d'animation de texte Minecraft (mod Animated Text / mods similaires). Ex: <shake>, <neon p=8 r=2 a=0.15>, <grad from=#FFCC00 to=#FF0000 hue=true f=0.3 sp=70 uni=true>",
+            "example": "<neon p=8 r=2 a=0.15>Texte brillant"
+        },
+        {
+            "name": "snbt_color_codes",
+            "regex": "§[0-9a-fk-orA-FK-OR]",
+            "description": "Codes couleur SNBT/JSON Minecraft avec le caractère section §",
+            "example": "§cTexte rouge §r"
+        }
+    ]
+}
